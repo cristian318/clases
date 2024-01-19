@@ -1,0 +1,69 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  /*  justify-content: center; */
+  /* los espacios que quedan por cubrir podemos llamarlo como contenido adaptativo */
+  /* CHECK al "cambio de forma" lo llamamos breackpoints */
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  /*  flex: none; */
+  border: 1px solid rgba(0, 0, 0, 0.705);
+  border-radius: 4px;
+  padding: 8px 16px;
+  background-color: white;
+  h2 {
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+}
+
+/* @media only screen and (max-width: 600px) {
+  .card {
+    flex: auto;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .card {
+    flex: 1 1 300px;
+    margin-top: 10px;
+    background-color: antiquewhite;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    flex-grow: 2;
+    background-color: white;
+  }
+} */
+
+.col {
+  width: 33%;
+}
+@media only screen and (max-width: 600px) {
+  .col {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .col {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .col {
+    width: 20%;
+  }
+}
